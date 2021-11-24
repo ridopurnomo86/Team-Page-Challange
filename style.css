@@ -46,6 +46,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   width: 100%;
+  overflow: hidden;
 }
 .grid-container div:nth-child(3n + 2) {
   margin-top: 152px;
