@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 110px 243px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.logo {
+  font-family: PT serif;
+  font-size: 36px;
+  font-weight: bold;
+  width: 50%;
+}
+.header-content {
+  width: 50%;
+}
+
+.header-content .title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.header-content .content {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+.grid-container div:nth-child(3n + 2) {
+  margin-top: 152px;
+}
+.card-employee {
+  display: flex;
+}
+.card-employee .job-type {
+  transform: rotate(90deg);
+  transform-origin: 10px 10px;
+}
+.card-employee .name-employee {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+.card-employee .image {
+  max-width: 238px;
+  max-height: 426px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.card-employee .job-type {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  width: 100px;
+}
+
+@media screen and (max-width: 1396px) {
+  .container {
+    padding: 55px 121px;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .container {
+    padding: 55px 40px;
+  }
+}
+@media screen and (max-width: 974px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+    row-gap: 64px;
+    width: 100%;
+  }
+  .grid-container div:nth-child(3n + 2) {
+    margin-top: 0px;
+  }
+  .grid-container div:nth-child(even) {
+    margin-top: 48px;
+  }
+  .container {
+    padding: 55px 19px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-content {
+    margin: 38px 0px;
+  }
+}
